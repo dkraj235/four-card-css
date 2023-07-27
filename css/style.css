@@ -1,0 +1,361 @@
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.top-section{
+   text-align: center;
+   width: 40%;
+   margin: 40px auto 30px;
+}
+
+.top-heading{
+    /* color:#EA5353; */
+    color: 	#A3A5AE;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right:0.65rem ;
+}
+
+.top-subheading{
+    /* color: #A3A5AE; */
+    margin-bottom:0.85rem ;
+    color:#000;
+    font-size: 2.1rem;
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+.top-content{
+    color:#A3A5AE;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+/* card section */
+
+
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%) */
+
+.card-section{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 23%;
+    height: 220px;
+    padding: 23px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    margin-right: 25px;
+    
+}
+
+.vertical-card-align{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin-right: 25px;
+}
+
+.vertical-card{
+    height: 220px;
+    padding: 23px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    margin-bottom:25px;
+    width: 100%;
+}
+
+.vertical-card p:first-child{
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.supervisor{
+    margin-top: 100px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.team{
+    border-top: 4px solid  hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    margin-top: 100px;
+    border-top: 4px solid  hsl(212, 86%, 64%) ;
+}
+
+.card-icon{
+    background-repeat: no-repeat;
+    float: right;
+    height:80px;
+    width: 100px;
+    background-size: contain;
+}
+
+
+
+.card-icon-supervisor{
+    background-image: url(images/icon-supervisor.svg);
+}
+.card-icon-team{
+    background-image: url(images/icon-team-builder.svg);
+}
+.card-icon-karma{
+    background-image: url(images/icon-karma.svg);
+}
+.card-icon-calculator{
+    background-image: url(images/icon-calculator.svg);
+}
+
+
+
+.card p:first-child{
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000;
+}
+.card p:last-child{
+    font-style: 0.85rem;
+    color: #A3A5AE;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Media query to make responsive for Mobile and other devices */
+
+
+
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 280px) and (max-width: 767px) {
+    
+    .top-section{
+        text-align: center;
+        width: 80%;
+        margin: 40px auto 30px;
+     }
+
+     .card-section{
+        height: auto;
+        width: 88%;
+        flex-direction: column;
+        margin: 0 auto;
+        }
+    
+       .card{
+        width: 100%;
+        }
+     
+     .top-heading{
+         font-size: 1.4rem;
+         padding-bottom: 5px;
+         font-weight: 500;
+     }
+     
+     .top-subheading{
+         font-size: 1.5rem;
+     }
+     .top-content{
+        /* color:#A3A5AE; */
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+    
+
+
+
+    /* vertical card responsiveness */
+    .vertical-card-align{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+    
+
+    .supervisor{
+        margin-top: 0;
+    }
+    .calculator{
+        margin-top: 0;
+    }
+    
+  }
+  
+
+  @media (min-width: 412px) and (max-width: 915px) and (orientation:landscape) {
+     
+    .top-section{
+        width: 80%;
+     }
+    
+  }
+
+  /* mobile in landscape mode */
+
+  @media (min-width: 360px) and (max-width: 740px) and (orientation:landscape) {
+     
+    .top-section{
+        width: 50%;
+     }
+     .card-section{
+        width: 75%;
+     }
+    
+  }
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (landscape)
+    ##Screen = B/w 767px to 896px
+  */
+  
+  @media (min-width: 741px) and (max-width: 914px) and (orientation:landscape) {
+    
+    .top-section{
+        width: 80%;
+     }
+     /* .card-section{
+        width: 75%;
+     } */
+    
+  }
+
+  
+  @media (min-width: 768px) and (max-width: 1180px) {
+    
+    .top-section{
+        width: 80%;
+     }
+  }
+
+  @media (min-width: 897px) and (max-width: 1180px) and (orientation:landscape){
+    
+    .top-section{
+        width: 40%;
+     }
+    
+    
+  }
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* .top-section{
+        width: 40%;
+     } */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
